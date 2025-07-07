@@ -338,6 +338,10 @@ class PageFactory {
   getProfilePage(): ProfilePage {
     return new ProfilePage();
   }
+
+  getOrderSummaryPage(): OrderSummaryPage {
+    return new OrderSummaryPage();
+  }
 }
 
 export default new PageFactory(); 
