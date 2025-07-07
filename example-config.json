@@ -1,0 +1,61 @@
+{
+  "environments": {
+    "dev": {
+      "baseUrl": "https://dev.example.com",
+      "timeout": 10000,
+      "retries": 1
+    },
+    "staging": {
+      "baseUrl": "https://staging.example.com",
+      "timeout": 15000,
+      "retries": 2
+    },
+    "prod": {
+      "baseUrl": "https://prod.example.com",
+      "timeout": 20000,
+      "retries": 3
+    }
+  },
+  "regions": {
+    "US": {
+      "name": "United States",
+      "currency": "USD",
+      "language": "en-US",
+      "timezone": "America/New_York"
+    },
+    "DE": {
+      "name": "Germany",
+      "currency": "EUR",
+      "language": "de-DE",
+      "timezone": "Europe/Berlin"
+    },
+    "UK": {
+      "name": "United Kingdom",
+      "currency": "GBP",
+      "language": "en-GB",
+      "timezone": "Europe/London"
+    }
+  },
+  "testSuites": {
+    "smoke": {
+      "tags": ["@smoke"],
+      "description": "Critical functionality tests"
+    },
+    "regression": {
+      "tags": ["@regression"],
+      "description": "Comprehensive test suite"
+    },
+    "us-region": {
+      "tags": ["@region:US"],
+      "description": "US region specific tests"
+    },
+    "german-region": {
+      "tags": ["@region:DE"],
+      "description": "German region specific tests"
+    },
+    "uk-region": {
+      "tags": ["@region:UK"],
+      "description": "UK region specific tests"
+    }
+  }
+} 

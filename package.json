@@ -1,0 +1,65 @@
+{
+  "name": "simplified-test-framework",
+  "version": "1.0.0",
+  "description": "Simplified e2e test framework",
+  "scripts": {
+    "test": "ts-node -r tsconfig-paths/register index.ts",
+    "test:unit": "mocha 'src/core/__tests__/unit/**/*.spec.ts'",
+    "lint": "eslint --ext .js,.ts,.json -f json -o eslintReport.json . || true",
+    "fix": "npm run lint -- --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/simplified-test-framework"
+  },
+  "keywords": [
+    "webdriverIO",
+    "e2e",
+    "cucumber"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "7.16.14",
+    "@wdio/cucumber-framework": "7.16.14",
+    "@wdio/local-runner": "7.16.14",
+    "@wdio/spec-reporter": "7.16.14",
+    "@wdio/codemod": "0.12.0",
+    "@wdio/config": "7.16.14",
+    "@wdio/runner": "7.16.14",
+    "chai": "4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "chromedriver": "^126.0.4",
+    "cucumber-html-reporter": "^5.5.0",
+    "cucumber-pretty": "^6.0.1",
+    "custom-env": "^2.0.1",
+    "faker": "^5.4.0",
+    "fs-extra": "^11.2.0",
+    "lodash": "^4.17.21",
+    "moment": "2.29.1",
+    "multiple-cucumber-html-reporter": "3.4.0",
+    "ts-node": "9.1.1",
+    "tsconfig-paths": "3.9.0",
+    "typescript": "4.3.5",
+    "uuid": "^9.0.0",
+    "wdio-chromedriver-service": "7.0.0",
+    "webdriverio": "7.16.14"
+  },
+  "devDependencies": {
+    "@types/chai": "4.2.16",
+    "@types/faker": "^5.5.9",
+    "@types/lodash": "^4.14.178",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.18.3",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-json": "^3.0.0",
+    "eslint-plugin-mocha": "^10.1.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-wdio": "^7.4.2",
+    "mocha": "^8.0.0",
+    "prettier": "2.5.1"
+  }
+} 

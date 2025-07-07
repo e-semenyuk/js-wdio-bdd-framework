@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "declaration": false,
+    "target": "ES2019",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noEmitOnError": true,
+    "noUnusedLocals": false,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "noEmit": true,
+    "pretty": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": false,
+    "lib": ["dom", "es5", "es6", "es2015", "es2015.promise", "ES2020", "ESNext"],
+    "types": [
+      "node",
+      "chai",
+      "webdriverio/async",
+      "@cucumber/cucumber",
+      "@wdio/types",
+      "expect-webdriverio",
+      "mocha"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@base/*": ["src/core/base/*"],
+      "pages/*": ["./src/ui/pages/*"]
+    },
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "./*.ts",
+    "./src/**/*.ts"
+  ],
+  "compileOnSave": false,
+  "typeAcquisition": {
+    "enable": false
+  }
+} 
