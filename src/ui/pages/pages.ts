@@ -338,6 +338,10 @@ class PageFactory {
   getProfilePage(): ProfilePage {
     return new ProfilePage();
   }
+
+  getProductPage(): ProductPage {
+    return new ProductPage();
+  }
 }
 
 export default new PageFactory(); 
