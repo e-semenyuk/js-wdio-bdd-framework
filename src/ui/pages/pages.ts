@@ -340,4 +340,8 @@ class PageFactory {
   }
 }
 
+  getProductPage(): ProductPage {
+    return new ProductPage();
+  }
+
 export default new PageFactory(); 
