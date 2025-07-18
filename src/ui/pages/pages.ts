@@ -81,7 +81,9 @@ class CatalogPage extends Page {
     addToCartButton: ".add-to-cart-btn",
     priceElement: ".price",
     noResultsMessage: ".no-results-message",
-    languageAttribute: "html[lang]"
+    languageAttribute: "html[lang]",
+    quantitySelector: "#quantity-selector",
+    errorMessage: ".error-message"
   };
 
   async browseProducts(): Promise<void> {
